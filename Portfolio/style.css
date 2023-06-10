@@ -1,0 +1,173 @@
+@import url("https://fonts.cdnfonts.com/css/press-start-2p");
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Kanit:ital,wght@1,300&family=Play&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url(wblio.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px;
+  padding-left: 8%;
+  padding-right: 8%;
+  font-family: "Play", sans-serif;
+}
+
+nav h2 {
+  color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-family: "Play", sans-serif;
+}
+span {
+  color: transparent;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px 25px;
+  list-style-type: none;
+  font-family: "Play", sans-serif;
+}
+
+nav ul li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #30d456;
+  transform: scale(1.2);
+}
+
+.btn {
+  font-family: "Play", sans-serif;
+  font-size: 20px;
+  background-color: #30d456;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 35px;
+  transition: transform 1s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.main {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translateY(-50);
+}
+
+h4 {
+  color: #fcfcfc;
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-family: "Play", sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: 20px 0 20px;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Play", sans-serif;
+}
+
+h1 span {
+  color: #30d456;
+  margin: 20px 0 20px;
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Play", sans-serif;
+}
+
+.Container-btn form {
+  padding: 20px 0px 0px;
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+  letter-spacing: 4px;
+  font-family: "Play", sans-serif;
+}
+
+.Container-btn form input:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #30d456;
+  border-radius: 30px;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: "Kanit", sans-serif;
+  font-weight: bolder;
+}
+.Container-btn form input:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: #30d456;
+  color: #fff;
+  box-shadow: 0px 0px 15px #858585;
+  right: 7px;
+  top: 26.5px;
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+}
+.container-animacao {
+  width: 246px;
+  overflow: hidden;
+}
+.container-animacao .text {
+  font-family: "Kanit", sans-serif;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+.container-animacao .text.first-text {
+  color: #30d456;
+}
+.text.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0f;
+  border-left: 2px solid #fff;
+  animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
